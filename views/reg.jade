@@ -1,0 +1,23 @@
+extends layout
+
+form(class="form-control" method="post")
+    filedset
+        legend 用户注册
+        div.form-group
+            label.control-label(for="username") 用户名
+            div.input-group
+                input#username.input-lg(type="text" name="username")
+                p.comment
+                  | 你的账户名称，用于登录和显示
+        div.form-group
+            label.control-label(for="password") 口令
+            div.input-group
+                input#password.input-lg(type="password" name="password")
+        div.form-group
+            label.control-label(for="password-repeat") 重复输入口令
+            div.input-group
+                input#password-repeat.input-lg(type="password" name="password-repeat")
+        div.form-group
+            button.btn.btn-primary
+
+
